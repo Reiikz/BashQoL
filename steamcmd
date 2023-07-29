@@ -181,5 +181,6 @@ function findSteamAppDirectory {
 }
 
 function beginSteam {
+    echo "implement begin steam"
     
 }

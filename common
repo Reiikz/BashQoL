@@ -84,6 +84,10 @@ function findAllOfTheQoLLibrary {
 declare -gA QoL_ERRORS
 QoL_ERRORS[upper_error_limit]="100"
 
+function QoLCopyright {
+	coecho "$FC_BOLD$FC_LIGHT_GREEN" "$([ ! -z "$PROGRAM_NAME" ] && echo "$FC_LIGHT_CYAN$PROGRAM_NAME$FC_LIGHT_GREEN" || echo "This program" ) has super dragon bash powers by $FC_LIGHT_CYAN""QoL$FC_LIGHT_GREEN"" created by $FC_LIGHT_MAGENTA""Reiikz $FC_GREEN($FC_LIGHT_CYAN""https://reiikz.net$FC_GREEN)"
+}
+
 ############## QoL Library errors!
 function registerQoLCommonExceptions {
 	local s="$FC_BOLD$FC_LIGHT_RED""QoL Error: $FC_RED"
